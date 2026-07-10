@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Account | EASA Follower</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #38BDF8"><path d="M12 2L2 7l10 5 10-5-10-5Z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                EASA Follower
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="delete-account.html" style="color: var(--text-primary);">Data & Accounts</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="card" style="max-width: 600px; margin: 0 auto;">
+            <h1 style="text-align: center; font-size: 2.5rem;">Account Deletion Request</h1>
+            <p style="text-align: center; margin-bottom: 2rem;">As per App Store and Google Play guidelines, you can request the complete deletion of your account and associated data.</p>
+            
+            <form onsubmit="event.preventDefault(); alert('Your deletion request has been submitted. We will process it within 7 days.');" style="margin-bottom: 2rem;">
+                <div class="form-group">
+                    <label class="form-label" for="email">Email Address</label>
+                    <input type="email" id="email" class="form-input" placeholder="Enter the email associated with your account" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="reason">Reason (Optional)</label>
+                    <textarea id="reason" class="form-input" rows="4" placeholder="Tell us why you are leaving..."></textarea>
+                </div>
+                <button type="submit" class="btn" style="width: 100%; background: #EF4444; color: white;">Request Account Deletion</button>
+            </form>
+
+            <div class="legal-content">
+                <h3 style="margin-top: 0;">What happens when I delete my account?</h3>
+                <ul>
+                    <li>Your profile and login credentials will be permanently erased.</li>
+                    <li>Your chat history and saved documents will be completely deleted from our servers.</li>
+                    <li>Any active subscriptions must be cancelled through your Apple ID or Google Play account separately.</li>
+                </ul>
+                <p>Alternatively, you can instantly delete your account from within the EASA Follower app by navigating to <strong>Settings -> Account -> Delete Account</strong>.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 EASA Follower. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
